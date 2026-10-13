@@ -13,6 +13,7 @@
       odin.enable = true;
       lua.enable = true;
       go.enable = true;
+      python.enable = true;
     };
 
     autocomplete.blink-cmp = {
