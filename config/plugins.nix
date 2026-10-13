@@ -7,6 +7,16 @@
 
     git.gitsigns.enable = true;
 
+    extraPlugins.atlas-nvim = {
+      package = pkgs.vimPlugins.atlas-nvim;
+      setup = "require('atlas').setup({})";
+    };
+
+    extraPackages = with pkgs; [
+      curl
+      gh
+    ];
+
     mini = {
       cursorword.enable = true;
       starter.enable = true;
