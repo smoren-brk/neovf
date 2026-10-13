@@ -11,11 +11,6 @@
   vim = {
     viAlias = false;
     vimAlias = true;
-    extraPackages = with pkgs; [
-      nixfmt
-      ripgrep
-      tree-sitter
-    ];
 
     clipboard = {
       enable = true;
