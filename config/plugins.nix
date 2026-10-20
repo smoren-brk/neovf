@@ -9,7 +9,7 @@
 
     extraPlugins.atlas-nvim = {
       package = pkgs.vimPlugins.atlas-nvim;
-      setup = "require('atlas').setup({})";
+      setup = "require('atlas').setup({ providers = { github = {} } })";
     };
 
     extraPackages = with pkgs; [
