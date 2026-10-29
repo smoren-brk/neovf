@@ -2,6 +2,7 @@
   vim = {
     utility = {
       diffview-nvim.enable = true;
+      grug-far-nvim.enable = true;
       oil-nvim.enable = true;
     };
 
