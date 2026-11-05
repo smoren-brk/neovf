@@ -8,24 +8,10 @@
 
     git.gitsigns.enable = true;
 
-    extraPlugins.atlas-nvim = {
-      package = pkgs.vimPlugins.atlas-nvim;
-      setup = "require('atlas').setup({ providers = { github = {} } })";
-    };
-
-    extraPackages = with pkgs; [
-      curl
-      gh
-    ];
-
     mini = {
       cursorword.enable = true;
       starter.enable = true;
       trailspace.enable = true;
-    };
-
-    navigation = {
-      harpoon.enable = true;
     };
 
     visuals = {
@@ -45,8 +31,6 @@
       fold = true;
       grammars = with pkgs.vimPlugins.nvim-treesitter.grammarPlugins; [
         bash
-        c
-        c_sharp
         cpp
         json
         lua
