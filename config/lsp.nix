@@ -13,6 +13,17 @@
       friendly-snippets.enable = true;
     };
 
+    languages = {
+        python = {
+            enable = true;
+            format = {
+                    enable = true;
+                    type = ["ruff"];
+                };
+            lsp.enable = true;
+        };
+    };
+
     diagnostics = {
       enable = true;
       config = {
